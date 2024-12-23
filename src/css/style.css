@@ -1,0 +1,79 @@
+:root {
+    --fonte-titulos: Comfortaa, Quicksand;
+    --fonte-paragrafos: Kumbh Sans, Figtree, Outfit;
+    --fonte-tabelas-e-links: Outfit;
+}
+
+.cabecalho {
+    background-color: orange;
+}
+
+.cabecalho h1 {
+    color: #ffffff;
+    text-shadow: 3px 3px 0 #282828;
+    font-family: var(--fonte-titulos);
+    font-size: 40px;
+    text-align: center;
+    padding: 50px;
+}
+
+.main p {
+    font-family: var(--fonte-paragrafos);
+    font-size: 25px;
+    margin: 30px;
+}
+
+h2 {
+    font-family: var(--fonte-titulos);
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+th,
+td {
+    font-family: var(--fonte-tabelas-e-links);
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #282828;
+    padding: 5px;
+}
+
+.como-rezar li {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+a,
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu-navegacao {
+    display: inline-block;
+    background-color: #dddddd;
+    margin: 30px;
+    padding: 15px;
+}
+
+.menu-navegacao a {
+    font-family: var(--fonte-tabelas-e-links);
+    margin: 15px;
+    font-size: 20px;
+
+}
+
+.menu-navegacao h2 {
+    margin: 15px 0 30px 15px;
+}
+
+table {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+}
