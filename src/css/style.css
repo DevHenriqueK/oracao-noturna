@@ -90,3 +90,10 @@ table {
     text-align: center;
     display: inline-block;
 }
+
+::placeholder,
+textarea {
+    padding: 5px;
+    font-family: var(--fonte-paragrafos);
+    font-size: 15px;
+}
