@@ -1,0 +1,165 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Comfortaa, 'Kumbh Sans', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p,
+a,
+li {
+    font-family: Outfit, Figtree, sans-serif;
+    font-size: 20px;
+}
+
+hr {
+    width: 100%;
+}
+
+/* ---------- ESTILOS CABEÇALHO ---------- */
+.cabecalho {
+    background-color: orange;
+    padding: 10px;
+}
+
+.cabecalho h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 1px #000;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.cabecalho li a {
+    color: #fff;
+    text-shadow: 2px 2px 1px #000;
+    padding: 10px;
+}
+
+.cabecalho li a:hover {
+    background-color: rgb(188, 122, 0);
+    transition: 0.15s ease-in-out;
+}
+
+.cabecalho .menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* ---------- ESTILOS MAIN ---------- */
+.conteudo {
+    padding: 20px;
+}
+
+/* ---------- ESTILOS COMO REZAR ---------- */
+.dezenas {
+    margin: 50px 0;
+    display: grid;
+    grid-template-areas: "titulo-1 titulo-2-3-4 titulo-5";
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.dezenas .primeira {
+    grid-area: titulo-1;
+}
+
+.dezenas .segunda-terceira-quarta {
+    grid-area: titulo-2-3-4
+}
+
+.dezenas .quinta {
+    grid-area: titulo-5
+}
+
+/* ---------- ESTILOS DEVOÇÕES MENSAIS ---------- */
+
+.devocao {
+    display: grid;
+    grid-template-areas: "mes mes mes" "oferecimento oracao-do-mes agradecimento";
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 50px;
+}
+
+.mes {
+    grid-area: mes;
+    text-align: center;
+}
+
+.oferecimento {
+    grid-area: oferecimento;
+    text-align: center;
+}
+
+.oracao-do-mes {
+    grid-area: oracao-do-mes;
+    text-align: center;
+}
+
+.agradecimento {
+    grid-area: agradecimento;
+    text-align: center;
+}
+
+.devocao a {
+    color: blue;
+    text-transform: uppercase;
+}
+
+.devocao a:hover {
+    text-decoration: underline;
+}
+
+.devocao textarea {
+    background-color: #f0f0f0;
+    font-family: Outfit, Figtree, sans-serif;
+    font-size: 20px;
+    padding: 10px 0 0 10px;
+}
+
+/* ---------- ESTILOS MISTÉRIOS ---------- */
+.misterios {
+    margin: 50px 0;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "gozosos dolorosos gloriosos luminosos";
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.gozosos {
+    grid-area: gozosos;
+}
+
+.dolorosos {
+    grid-area: dolorosos;
+}
+
+.gloriosos {
+    grid-area: gloriosos;
+}
+
+.luminosos {
+    grid-area: luminosos;
+}
+
+/* ---------- ESTILOS ORAÇÕES ---------- */
+.oracoes ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
