@@ -1,0 +1,69 @@
+@media(max-width: 1024px) {
+    .cabecalho li a {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 768px) {
+    p,
+    a,
+    li,
+    td {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    .cabecalho h1 {
+        font-size: 30px;
+    }
+
+    .cabecalho li a {
+        font-size: 12px;
+    }
+
+    .conteudo * {
+        text-align: center;
+    }
+
+    .rodape .conheca a img {
+        width: 60px;
+    }
+}
+
+@media(max-width: 426px){
+    .cabecalho .menu {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .dezenas {
+        grid-template-areas: 'titulo-1' 'titulo-2-3-4' 'titulo-5'; 
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+        gap: 25px;
+    }
+
+    .devocao {
+        grid-template-areas: 'mes' 'oferecimento' 'oracao-do-mes' 'agradecimento';
+        grid-template-columns: auto;
+        grid-template-areas: repeat(4, auto);
+        margin-top: 10px;
+    }
+
+    .misterios {
+        grid-template-areas: 'gozosos dolorosos' 'gloriosos luminosos';
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+}

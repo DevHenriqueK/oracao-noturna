@@ -4,11 +4,14 @@ html {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+th {
     font-family: Comfortaa, 'Kumbh Sans', sans-serif;
 }
 
-h2 {
+h2,
+th {
     font-size: 30px;
 }
 
@@ -16,21 +19,29 @@ h3 {
     font-size: 24px;
 }
 
+h4 {
+    font-size: 22px;
+}
+
 p,
 a,
-li {
+li,
+td {
     font-family: Outfit, Figtree, sans-serif;
     font-size: 20px;
 }
 
-hr {
-    width: 100%;
+td {
+    border: 1px solid #000;
+    padding: 5px;
+    max-width: 257px;
 }
 
 /* ---------- ESTILOS CABEÇALHO ---------- */
 .cabecalho {
-    background-color: orange;
+    background-color: #ffa500;
     padding: 10px;
+    width: 100%;
 }
 
 .cabecalho h1 {
@@ -56,6 +67,7 @@ hr {
 .cabecalho .menu {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 40px;
 }
 
@@ -162,4 +174,119 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+/* ---------- ESTILOS PÁGINAS SECUNDÁRIAS ---------- */
+.evangelhos,
+.tercos,
+.adventos {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+table {
+    margin-top: 20px;
+}
+
+.tercos {
+    grid-area: tercos;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.conteudo-tercos {
+    display: grid;
+    grid-template-areas: 'tercos como-rezar';
+}
+
+.como-rezar-tercos {
+    grid-area: como-rezar;
+    background-color: #f0f0f0;
+    padding: 30px 0;
+    max-width: 400px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.como-rezar-tercos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.como-rezar-tercos li {
+    max-width: 246px;
+}
+
+.como-rezar-tercos a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- ESTILOS RODAPÉ ---------- */
+.rodape {
+    background-color: #e0e0e0;
+    padding: 10px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.rodape .conheca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape .conheca img {
+    margin: 15px 0 10px 0;
+}
+
+.rodape .conheca a img {
+    width: 90px;
+    border-radius: 100%;
+}
+
+.rodape .conheca a:hover {
+    text-decoration: underline;
+}
+
+.rodape .problema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape .problema h4 {
+    margin-bottom: 5px;
+}
+
+.rodape .problema p {
+    margin-bottom: 20px;
+}
+
+.rodape .problema .fab {
+    font-size: 25px;
+}
+
+.rodape .problema .fab:hover {
+    opacity: 70%;
+}
+
+.rodape .social {
+    display: flex;
+    gap: 20px;
 }
