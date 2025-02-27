@@ -2,6 +2,18 @@ html {
     scroll-behavior: smooth;
 }
 
+body.modo-escuro {
+    background-color: #000;
+}
+
+.modo-escuro .rodape {
+    background-color: #222;
+}
+
+.modo-escuro * {
+    color: #fff;
+}
+
 h1,
 h2,
 h3,
@@ -26,7 +38,8 @@ h4 {
 p,
 a,
 li,
-td {
+td, 
+button {
     font-family: Outfit, Figtree, sans-serif;
     font-size: 20px;
 }
@@ -131,8 +144,11 @@ td:nth-child(2) {
 }
 
 .devocao a {
-    color: blue;
     text-transform: uppercase;
+}
+
+body:not(.modo-escuro) .devocao a {
+    color: blue;
 }
 
 .devocao a:hover {
@@ -220,8 +236,11 @@ td:nth-child(2) {
 }
 
 /* ---------- ESTILOS RODAPÉ ---------- */
-.rodape {
+body:not(.modo-escuro) .rodape {
     background-color: #e0e0e0;
+}
+
+.rodape {
     padding: 10px;
     height: 500px;
 
@@ -278,4 +297,31 @@ td:nth-child(2) {
 .rodape .social {
     display: flex;
     gap: 20px;
+}
+
+.rodape .btn-modo-claridade {
+    border: none;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+body:not(.modo-escuro) .rodape .btn-modo-claridade {
+    box-shadow: 0 2px 10px #555;
+}
+
+body:not(.modo-escuro) .rodape .btn-modo-claridade:hover {
+    background-color: #555;
+    color: #eee;
+    cursor: pointer;
+}
+
+body.modo-escuro .rodape .btn-modo-claridade {
+    background-color: #222;
+    box-shadow: 0 0 10px #eee;
+    cursor: pointer;
+}
+
+body.modo-escuro .rodape .btn-modo-claridade:hover {
+    background-color: #eee;
+    color: #555;
 }
